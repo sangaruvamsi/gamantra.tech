@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Regestion</title>
+        <link rel="icon" href="images/img/logo.jpg">
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <style>
+            .register .nav-tabs .nav-link:hover{
+                border: none;
+            }
+            .text-align{
+                margin-top: -3%;
+                margin-bottom: -9%;
+
+                padding: 10%;
+                margin-left: 30%;
+            }
+            .form-new{
+                margin-right: 22%;
+                margin-left: 20%;
+            }
+            .register-heading{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register-heading h1{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+            }
+            .register{
+                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+            }
+            .btnSubmit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: #fff;
+                background-color: #03612e;
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                color: rgb(246, 246, 252);
+                margin-top: 4%;
+            }
+    </style>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-person custom-icon me-2"></i>
+                                <strong class="text-dark">Welcome to Gamantra 2023</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        GAMANTRA
+                    </a>
+
+                    <a href="regster.html" class="btn custom-btn d-lg-none ms-auto me-4">REGISTER</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_2">About</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_3">org</a>
+                            </li>
+                               <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="make-in-india.html">Make in India</a>
+                            </li>
+                        </ul>
+
+                        <a href="regster.html" class="btn custom-btn d-lg-block d-none">REGISTER</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <section class="ticket-section section-padding">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-10 mx-auto">
+                            <form class="custom-form ticket-form mb-5 mb-lg-0"    autocomplete="off" action="https://script.google.com/macros/s/AKfycby9I7iegXRDdwdBonwnBKTXEoUw_xQOVtxErbR8BMEqPHC582hjOgpGq_odewzZkoy96w/exec" name="google-sheet">
+                                <h2 class="text-center mb-4">Get Registration here</h2>
+
+                                <div class="ticket-form-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="text" name="Name" id="ticket-form-name" class="form-control" placeholder="Full name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="email" name="email" id="ticket-form-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+                                         <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="textarea" name="project-title" id="ticket-form-message"  class="form-control" placeholder="Project Title" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="text" name="project-outcome" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <p style="font-family: monospace;
+                                            color: black;font-weight: 300;">Submission by applicant</p><input type="date" name="submission by applicant" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
+                                        </div>
+                                    </div>
+
+                                    <input type="tel" class="form-control" name="phone" placeholder="Ph 085-456-7890"  required="">
+
+                                    <h6></h6>
+                                    
+                                    </div>
+
+                                <input type="number" name="team-members" id="ticket-form-number" class="form-control" placeholder="numbers of team members" required>
+
+                                    <textarea name="message" rows="3" class="form-control" id="ticket-form-message" placeholder="Additional Request"></textarea>
+
+                                    <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                        <button type="submit" class="form-control">REGISTER</button>
+                                    </div>
+                                    <h5 style="color:orangered;"><u >NOTE</u></h5>
+                                    <p style="color:black; font-size:24px;">*Organization : 000/-<br>
+                                    *Students : 000/-</p>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="text-white mb-lg-0">GAMANTRA</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                            <ul class="social-icon d-flex justify-content-lg-end">
+                                <li class="social-icon-item">
+                                    <a href="https://twitter.com/GamantraTech" class="social-icon-link">
+                                        <span class="bi-twitter"></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="mailto:Gamntra.tech@gmail.com" class="social-icon-link">
+                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+</svg></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="https://instagram.com/gamantra.tech?igshid=MDM4ZDc5MmU=" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://youtube.com/@gamantratech" class="social-icon-link">
+                                        <span class="bi-youtube"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://www.facebook.com/profile.php?id=100089933206831&mibextid=ZbWKwL" class="social-icon-link">
+                                        <span class="bi-facebook"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 pb-2">
+                        <h5 class="site-footer-title mb-3">Links</h5>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_1" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_2" class="site-footer-link">About</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_3" class="site-footer-link">Leading</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_4" class="site-footer-link">Schedule</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_6" class="site-footer-link">Contact</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="regster.html" class="site-footer-link">REGISTER</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel:+91 89851 97786" class="site-footer-link">
+                                +91 89851 97786
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:gamantra.tech@gmail.com" class="site-footer-link">
+                                Gamantra.tech@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Location</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                        Ambikapalli Agraharam(v),Ramachandrapuram(M),East Godavari Dist,Andhar Pradesh-533 255</p>
+
+                        <a class="link-fx-1 color-contrast-higher mt-3" href="https://goo.gl/maps/T5SKyU8NZinfaxLVA" target="blank">
+                            <span>Our Maps</span>
+                            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12 mt-5">
+                            <p class="copyright-text">Copyright © 2023 GAMANTRA</p>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-lg-5">
+                            <ul class="site-footer-links">
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="privacy.html" class="site-footer-link">Privacy Policy</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Your Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="last">
+                <h5>Developed and Maintined By Vamsikrishna</h5>
+            </div>
+        </footer>
+
+<!--
+
+T e m p l a t e M o
+
+-->
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="main.js"></script>
+
+       <script type="text/javascript">
+           
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+       </script>
+       
+         
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyUhPMFxg1wSso6PEOs-Um-CGR8cSm-fsAiINWsTGJkGDuKNIg5xubZ4b5mZej9Tzdpkg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+</html>
