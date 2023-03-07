@@ -378,10 +378,11 @@ strong {
 .site-header {
   background-color: var(--primary-color);
   padding-top: 12px;
-  padding-bottom: 12px;
+
 }
 
 
+} 
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
@@ -1000,6 +1001,20 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media screen and (max-width: 991px)
+{
+  .services-info h1{
+    font-size: 12px;
+
+  }
+  .clearfix h4{
+    font-size: 12px;
+  }
+  .container  img{
+    width: 45px;
+
+  }
+}
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 36px;
