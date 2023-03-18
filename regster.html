@@ -147,7 +147,8 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-10 mx-auto">
-                            <form class="custom-form ticket-form mb-5 mb-lg-0"    autocomplete="off" action="https://script.google.com/macros/s/AKfycby9I7iegXRDdwdBonwnBKTXEoUw_xQOVtxErbR8BMEqPHC582hjOgpGq_odewzZkoy96w/exec" name="google-sheet">
+                            <!-- <form class="custom-form ticket-form mb-5 mb-lg-0"    autocomplete="off" action="https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec" name="google-sheet"> -->
+                                <form class="custom-form ticket-form mb-5 mb-lg-0" method="post" autocomplete="off" action="https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec" name="google-sheet">
                                 <h2 class="text-center mb-4">Get Registration here</h2>
 
                                 <div class="ticket-form-body">
@@ -157,30 +158,60 @@
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-12">
+
                                             <input type="email" name="email" id="ticket-form-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+
                                         </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="textarea" name="mobile number" id="ticket-form-message"  class="form-control" placeholder="mobile Number" required>
+                                        </div>
+
                                          <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="textarea" name="project-title" id="ticket-form-message"  class="form-control" placeholder="Project Title" required>
+                                            <!-- <input type="textarea" name="Qualification" id="ticket-form-message"  class="form-control" placeholder="Qualification" required> -->
+                                            
+
+<input class="form-control" list="datalistOptions" name="Qualification" id="ticket-form-message"  placeholder="Qualification" required>
+<datalist id="datalistOptions">
+  <option value="UG">
+  <option value="PG">
+  <option value="M.Tech">
+  <option value="B.Tech">
+  <option value="DEGREE">
+  <option value="Any degree">
+</datalist>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <input type="text" name="project-outcome" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
-                                            <p style="font-family: monospace;
-                                            color: black;font-weight: 300;">Submission by applicant</p><input type="date" name="submission by applicant" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
+                                            <!-- <p style="font-family: monospace;
+                                            color: black;font-weight: 300;">Submission by applicant</p> --><input type="date" name="submission by applicant" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
                                         </div>
                                     </div>
 
-                                    <input type="tel" class="form-control" name="phone" placeholder="Ph 085-456-7890"  required="">
+                                <input type="textarea" name="title" id="ticket-form-number" class="form-control" placeholder="Title of the working model"required>
+                                <div class="mb-3">
+  <label for="formFileMultiple" name="Doc-file"  >Project Docement/paper Attcement</label>
+  <input class="form-control" type="file" id="ticket-form-message"class="form-control" name="Doc-file" type="file"  multiple>
+</div>
 
-                                    <h6></h6>
-                                    
-                                    </div>
-
-                                <input type="number" name="team-members" id="ticket-form-number" class="form-control" placeholder="numbers of team members" required>
-
-                                    <textarea name="message" rows="3" class="form-control" id="ticket-form-message" placeholder="Additional Request"></textarea>
-
+                               
+<div class="mb-3">
+  <input class="form-control" list="datalistOptions-1" name="Referred By" id="ticket-form-message"  placeholder="Referred By" required>
+<datalist id="datalistOptions-1">
+  <option value="Students">
+  <option value="Facility">
+  <option value="others..">
+  <!-- <option value="PG">
+  <option value="M.Tech">
+  <option value="B.Tech">
+  <option value="DEGREE">
+  <option value="Any degree"> -->
+</datalist>
+</div>
+  <textarea class="form-control" id="ticket-form-message" rows="3" type="textarea" name="address" placeholder="address" required></textarea>
+ 
+                                
                                     <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                         <button type="submit" class="form-control">REGISTER</button>
                                     </div>
@@ -190,7 +221,68 @@
                                 </div>
                             </form>
                     </div>
-                </div>
+                </div> 
+
+
+                <!-- <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form> -->
             </section>
         </main>
 
@@ -384,7 +476,20 @@ var x = setInterval(function() {
        
          
           <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyUhPMFxg1wSso6PEOs-Um-CGR8cSm-fsAiINWsTGJkGDuKNIg5xubZ4b5mZej9Tzdpkg/exec'
+            // const scriptURL = 'https://script.google.com/macros/s/AKfycbxBLAXxBXhUcrZYOqWtg3Xf5fPZeCL4jMychfi-eqcqcfnzuzlmDKHqN9ujMYP-o4Z8fg/exec'
+            // const form = document.forms['google-sheet']
+          
+            // form.addEventListener('submit', e => {
+            //   e.preventDefault()
+            //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            //     .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            //     .catch(error => console.error('Error!', error.message))
+            // })
+
+
+           
+            <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
