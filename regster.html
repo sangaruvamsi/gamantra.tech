@@ -145,32 +145,35 @@
 
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-6 col-10 mx-auto">
-                            <!-- <form class="custom-form ticket-form mb-5 mb-lg-0"    autocomplete="off" action="https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec" name="google-sheet"> -->
-                                <form class="custom-form ticket-form mb-5 mb-lg-0" method="post" autocomplete="off" action="https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec" name="google-sheet">
+                            <div class="custom-form ticket-form mb-5 mb-lg-0">
+                                 <form  action="https://script.google.com/macros/s/AKfycbz8m5RbpYEfVp8-I5e5z7SWlfGAAq--KKjWPIAOWZYOt0GychpCOKF4ISMA8MIpMFQtWA/exec" method="post" role="form" name="google-sheet">
+                                 <!-- <form method="post" autocomplete="off" name="google-sheet" action="https://script.google.com/macros/s/AKfycby-JptnACZMUPlIWiOCYVFgp9vj8qYDdlvvOVVnYR65wl5VuFiOn9BRNwjPhiZDdYyp/exec">    -->
+                            
+                                    <!-- <form id="myForm" onsubmit="handleFormSubmit(this)"> -->
+                                  <!-- <h1 id="msg"></h1> -->
                                 <h2 class="text-center mb-4">Get Registration here</h2>
 
                                 <div class="ticket-form-body">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="text" name="Name" id="ticket-form-name" class="form-control" placeholder="Full name" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-
-                                            <input type="email" name="email" id="ticket-form-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="textarea" name="mobile number" id="ticket-form-message"  class="form-control" placeholder="mobile Number" required>
-                                        </div>
-
                                          <div class="col-lg-6 col-md-6 col-12">
-                                            <!-- <input type="textarea" name="Qualification" id="ticket-form-message"  class="form-control" placeholder="Qualification" required> -->
-                                            
+                                            <input type="text" name="Name" id="Name" class="form-control" placeholder="Full name" required>
+                                        </div>
 
-<input class="form-control" list="datalistOptions" name="Qualification" id="ticket-form-message"  placeholder="Qualification" required>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <input type="tel" class="form-control" name="mobile" placeholder="Ph 085-456-7890" 
+                                     required="">
+                                                        
+                       <input type="text" name="title" id="ticket-form-number" class="form-control" placeholder="title of the working model" required>
+
+
+<input class="form-control" list="datalistOptions" name="qualification" id="ticket-form-message"  placeholder="Qualification" required>
 <datalist id="datalistOptions">
   <option value="UG">
   <option value="PG">
@@ -179,110 +182,45 @@
   <option value="DEGREE">
   <option value="Any degree">
 </datalist>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="text" name="project-outcome" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <!-- <p style="font-family: monospace;
-                                            color: black;font-weight: 300;">Submission by applicant</p> --><input type="date" name="submission by applicant" id="ticket-form-message"  class="form-control" placeholder="Expected outcome" required>
-                                        </div>
-                                    </div>
+                        <div class="mb-3">
+                               <input class="form-control" list="datalistOptions-1" name="referred-by" id="ticket-form-message"  placeholder="Referred By" required>
+                            <datalist id="datalistOptions-1">
+                                <option value="Students">
+                                 <option value="Facility">
+                                 <option value="others..">
+                            </datalist>
+                        </div>   
 
-                                <input type="textarea" name="title" id="ticket-form-number" class="form-control" placeholder="Title of the working model"required>
-                                <div class="mb-3">
-  <label for="formFileMultiple" name="Doc-file"  >Project Docement/paper Attcement</label>
-  <input class="form-control" type="file" id="ticket-form-message"class="form-control" name="Doc-file" type="file"  multiple>
-</div>
+                                    <textarea name="address" rows="3" class="form-control" id="ticket-form-message" placeholder="Address"></textarea>
 
-                               
-<div class="mb-3">
-  <input class="form-control" list="datalistOptions-1" name="Referred By" id="ticket-form-message"  placeholder="Referred By" required>
-<datalist id="datalistOptions-1">
-  <option value="Students">
-  <option value="Facility">
-  <option value="others..">
-  <!-- <option value="PG">
-  <option value="M.Tech">
-  <option value="B.Tech">
-  <option value="DEGREE">
-  <option value="Any degree"> -->
-</datalist>
-</div>
-  <textarea class="form-control" id="ticket-form-message" rows="3" type="textarea" name="address" placeholder="address" required></textarea>
- 
-                                
                                     <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">REGISTER</button>
+                                        <button type="submit" class="form-control" id="sub">Registor</button>
                                     </div>
-                                    <h5 style="color:orangered;"><u >NOTE</u></h5>
+          
+
+                                    <h4 >send your Project Docement/paper Attcement</h4>
+                                    <ul class="social-icon d-flex ">
+                                    <li class="social-icon-item">
+                                    <a href="mailto:Gamntra.tech@gmail.com" class="social-icon-link">
+                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                       <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                                       <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/></svg></span> </a>
+                                   </li>
+
+                                 <li class="social-icon-item">
+                                   <a aria-label="Chat on WhatsApp" href="https://wa.me/+919100851063?text=Send your  Project Docement/paper Attcement" class="social-icon-link">
+                                  <i class="bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                                 <h5 style="color:orangered;"><u >NOTE</u></h5>
                                     <p style="color:black; font-size:24px;">*Organization : 000/-<br>
                                     *Students : 000/-</p>
-                                </div>
                             </form>
                     </div>
-                </div> 
-
-
-                <!-- <form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-4">
-    <label for="validationCustom01" class="form-label">Full Name</label>
-    <input type="text" class="form-control" id="validationCustom01" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustomUsername" class="form-label">Username</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend">@</span>
-      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-      <div class="invalid-feedback">
-        Please choose a username.
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationCustom03" class="form-label">City</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
-    <div class="invalid-feedback">
-      Please provide a valid city.
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationCustom04" class="form-label">State</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationCustom05" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-      Please provide a valid zip.
-    </div>
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
-</form> -->
+                </div>
+            </div>
             </section>
         </main>
 
@@ -438,73 +376,46 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
         <script src="main.js"></script>
-
-       <script type="text/javascript">
-           
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-       </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+     
        
-         
+    
           <script>
-            // const scriptURL = 'https://script.google.com/macros/s/AKfycbxBLAXxBXhUcrZYOqWtg3Xf5fPZeCL4jMychfi-eqcqcfnzuzlmDKHqN9ujMYP-o4Z8fg/exec'
-            // const form = document.forms['google-sheet']
-          
-            // form.addEventListener('submit', e => {
-            //   e.preventDefault()
-            //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            //     .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-            //     .catch(error => console.error('Error!', error.message))
-            // })
-
-
-           
-            <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzV3Yf_Pv_ZNNhEWytjI5Up97KRijQ5bcjeE7Wehm9ytS0eaoOUhDe0MV9XsRbxDNQp-A/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz8m5RbpYEfVp8-I5e5z7SWlfGAAq--KKjWPIAOWZYOt0GychpCOKF4ISMA8MIpMFQtWA/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... please Reload the page and send your project document in below of Gmail or whatsapp"))
                 .catch(error => console.error('Error!', error.message))
+               
+
             })
-          </script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-         <script type="text/javascript">
+          </script>      
+ <!--           
+ <script>
+        let form = document.querySelector("form");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.querySelector("#sub").value = "Submiting..";
+            let data = new FormData(form);
+            fetch('Paste_Your_Api_EndPoint_Url', {
+                    method: "POST",
+                    body: data
+                })
+                .then(res => res.text())
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    document.querySelector("#sub").value = "Submit"
+                });
+        })
+    </script> -->
+        
            
-
+ <script type="text/javascript">
 // Set the date we're counting down to
 var countDownDate = new Date("May 27, 2023 10:24:05").getTime();
 
